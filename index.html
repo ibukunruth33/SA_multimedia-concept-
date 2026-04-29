@@ -1,9 +1,11 @@
+
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SA Multimedia Concept | Digital & Tech Services</title>  <!-- SEO -->  <meta name="description" content="SA Multimedia Concept provides internet services, CAC registration, NIN modification, and computer repairs in Nigeria." />
-  <meta name="keywords" content="CAC registration, NIN modification, internet services, computer repair, SA Multimedia Concept" />  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  <style>
+  <title>Seunayo_SA_Multimedia Concept | World-Class Digital Agency</title>  <!-- SEO -->  <meta name="description" content="Seunayo_SA_Multimedia Concept is a world-class digital agency in Nigeria offering CAC registration, NIN services, printing, cyber services, and computer repairs." />
+  <meta name="keywords" content="CAC registration, NIN services, BVN, printing, cyber cafe, computer repair, Nigeria digital agency" />
+  <meta name="author" content="Seunayo_SA_Multimedia Concept" />  <!-- Fonts -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <style>
     *{
       margin:0;
       padding:0;
@@ -12,9 +14,18 @@
     }
 
     body{
-      background:#0b1220;
+      background:#050814;
       color:#fff;
       overflow-x:hidden;
+    }
+
+    /* PARTICLES BACKGROUND */
+    #particles{
+      position:fixed;
+      width:100%;
+      height:100%;
+      z-index:-1;
+      background:radial-gradient(circle at top,#0f172a,#050814);
     }
 
     /* NAV */
@@ -26,9 +37,10 @@
       justify-content:space-between;
       align-items:center;
       padding:15px 40px;
-      background:rgba(15,23,42,0.7);
-      backdrop-filter:blur(10px);
+      background:rgba(10,15,30,0.6);
+      backdrop-filter:blur(14px);
       z-index:1000;
+      border-bottom:1px solid rgba(255,255,255,0.05);
     }
 
     .logo{
@@ -36,22 +48,27 @@
       align-items:center;
       gap:10px;
       font-weight:700;
-      color:#0ea5e9;
+      color:#38bdf8;
     }
 
     .logo-box{
-      width:35px;
-      height:35px;
-      background:linear-gradient(45deg,#0ea5e9,#1e40af);
+      width:38px;
+      height:38px;
       border-radius:10px;
+      background:linear-gradient(45deg,#38bdf8,#2563eb);
+      box-shadow:0 0 20px rgba(56,189,248,0.4);
     }
 
     nav a{
       color:#fff;
       text-decoration:none;
-      margin-left:20px;
+      margin-left:18px;
       font-size:14px;
+      opacity:0.8;
+      transition:0.3s;
     }
+
+    nav a:hover{opacity:1;color:#38bdf8;}
 
     /* HERO */
     header{
@@ -62,80 +79,111 @@
       align-items:center;
       text-align:center;
       padding:20px;
-      background:radial-gradient(circle at top,#1e293b,#0b1220);
     }
 
     header h1{
-      font-size:3rem;
-      margin-bottom:10px;
+      font-size:3.5rem;
+      font-weight:700;
+      background:linear-gradient(45deg,#38bdf8,#2563eb);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
     }
 
     header p{
-      opacity:0.8;
-      max-width:600px;
+      max-width:750px;
+      opacity:0.85;
+      margin-top:10px;
     }
 
     .btn{
-      margin-top:20px;
-      padding:12px 25px;
-      border:none;
+      margin-top:25px;
+      padding:14px 32px;
       border-radius:30px;
-      background:#0ea5e9;
+      background:linear-gradient(45deg,#38bdf8,#2563eb);
       color:#fff;
-      cursor:pointer;
-      transition:0.3s;
       text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
     }
 
-    .btn:hover{
-      transform:scale(1.05);
-      background:#0284c7;
-    }
+    .btn:hover{transform:scale(1.08);}
 
+    /* SECTIONS */
     section{
-      padding:80px 20px;
-      max-width:1100px;
+      padding:100px 20px;
+      max-width:1200px;
       margin:auto;
     }
 
     h2{
       text-align:center;
+      font-size:2.2rem;
       margin-bottom:40px;
-      color:#0ea5e9;
+      color:#38bdf8;
     }
 
-    /* SERVICES */
+    /* GRID */
     .grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
       gap:20px;
     }
 
     .card{
-      background:rgba(30,41,59,0.8);
-      padding:20px;
-      border-radius:15px;
-      transition:0.3s;
+      background:rgba(255,255,255,0.03);
+      padding:22px;
+      border-radius:14px;
       border:1px solid rgba(255,255,255,0.05);
+      transition:0.3s;
+      transform:translateY(20px);
+      opacity:0;
+    }
+
+    .card.show{
+      transform:translateY(0);
+      opacity:1;
     }
 
     .card:hover{
-      transform:translateY(-10px);
-      border-color:#0ea5e9;
+      transform:translateY(-8px);
+      border-color:#38bdf8;
+    }
+
+    /* STATS */
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+      text-align:center;
+    }
+
+    .stat{
+      background:rgba(255,255,255,0.03);
+      padding:25px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .stat h3{
+      font-size:2rem;
+      color:#38bdf8;
+    }
+
+    /* CONTACT */
+    .contact{
+      text-align:center;
     }
 
     /* BOOKING */
     .booking{
-      background:rgba(30,41,59,0.5);
-      border-radius:15px;
-      padding:30px;
-      max-width:600px;
+      max-width:650px;
       margin:auto;
-      border:1px solid rgba(255,255,255,0.05);
+      background:rgba(255,255,255,0.03);
+      padding:30px;
+      border-radius:15px;
     }
 
-    .booking input,
-    .booking textarea{
+    input,textarea{
       width:100%;
       padding:12px;
       margin-top:10px;
@@ -144,26 +192,25 @@
       outline:none;
     }
 
-    .booking button{
+    button{
       margin-top:15px;
       width:100%;
-      padding:12px;
+      padding:13px;
+      background:linear-gradient(45deg,#38bdf8,#2563eb);
       border:none;
-      background:#0ea5e9;
       color:#fff;
       border-radius:8px;
+      font-weight:600;
       cursor:pointer;
     }
 
-    /* FOOTER */
     footer{
       text-align:center;
-      padding:20px;
-      border-top:1px solid #1e293b;
-      margin-top:40px;
+      padding:25px;
+      border-top:1px solid rgba(255,255,255,0.05);
+      opacity:0.8;
     }
 
-    /* WHATSAPP */
     .whatsapp{
       position:fixed;
       bottom:20px;
@@ -171,71 +218,69 @@
       background:#25D366;
       padding:15px;
       border-radius:50px;
-      text-decoration:none;
       color:#fff;
+      text-decoration:none;
       font-weight:600;
+      box-shadow:0 10px 20px rgba(0,0,0,0.3);
     }
-
-    /* ANIMATION */
-    .fade{
-      opacity:0;
-      transform:translateY(30px);
-      transition:0.6s;
-    }
-
-    .fade.show{
-      opacity:1;
-      transform:translateY(0);
-    }
-
   </style></head>
-<body><!-- NAV --><nav>
+<body><div id="particles"></div><nav>
   <div class="logo">
     <div class="logo-box"></div>
-    SA Multimedia Concept
+    Seunayo_SA_Multimedia
   </div>
   <div>
     <a href="#services">Services</a>
+    <a href="#stats">Impact</a>
     <a href="#booking">Book</a>
     <a href="#contact">Contact</a>
   </div>
-</nav><!-- HERO --><header>
-  <h1>Digital Solutions That Work</h1>
-  <p>Internet Services • CAC Registration • NIN Modification • Computer Repairs</p>
-  <a href="#booking" class="btn">Book a Service</a>
-</header><!-- SERVICES --><section id="services" class="fade">
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">🌐 Internet Services</div>
-    <div class="card">📄 CAC Registration Consultant</div>
-    <div class="card">🆔 NIN Modification</div>
-    <div class="card">💻 Computer Repairs</div>
+</nav><header>
+  <h1>World-Class Digital Agency</h1>
+  <p>We provide enterprise-level CAC registration, NIN services, printing, cyber solutions, and IT support across Nigeria.</p>
+  <a href="#booking" class="btn">Start Now</a>
+</header><section id="stats">
+  <h2>Our Global Standard Impact</h2>
+  <div class="stats">
+    <div class="stat"><h3>1000+</h3><p>Clients Served</p></div>
+    <div class="stat"><h3>99%</h3><p>Success Rate</p></div>
+    <div class="stat"><h3>24/7</h3><p>Support</p></div>
   </div>
-</section><!-- BOOKING --><section id="booking" class="fade">
-  <h2>Book a Service</h2>
+</section><section id="services">
+  <h2>Enterprise Solutions</h2>
+  <div class="grid">
+    <div class="card">CAC & SCUML Registration</div>
+    <div class="card">NIN / BVN Services</div>
+    <div class="card">Printing & Graphic Design</div>
+    <div class="card">Internet & Cyber Services</div>
+    <div class="card">Computer Repairs & IT Support</div>
+    <div class="card">Document Processing Solutions</div>
+  </div>
+</section><section id="booking">
+  <h2>Book Enterprise Service</h2>
   <div class="booking">
-    <form action="https://wa.me/2347068470309" target="_blank">
-      <input type="text" placeholder="Your Name" required />
-      <input type="text" placeholder="Service Needed" required />
-      <textarea rows="4" placeholder="Describe your request"></textarea>
-      <button type="submit">Send Booking via WhatsApp</button>
+    <form action="https://wa.me/2347068470309">
+      <input placeholder="Full Name" required>
+      <input placeholder="Service Required" required>
+      <textarea placeholder="Project Details"></textarea>
+      <button>Send Request</button>
     </form>
   </div>
-</section><!-- CONTACT --><section id="contact" class="fade">
-  <h2>Contact</h2>
-  <p style="text-align:center;">Call/WhatsApp: 07068470309</p>
+</section><section id="contact" class="contact">
+  <h2>Contact Global Desk</h2>
+  <p>📞 07068470309</p>
 </section><footer>
-  <p>&copy; 2026 SA Multimedia Concept. All rights reserved.</p>
-</footer><a class="whatsapp" href="https://wa.me/2347068470309" target="_blank">WhatsApp</a>
+  <p>&copy; 2026 Seunayo_SA_Multimedia Concept | World-Class Digital Agency</p>
+</footer><a class="whatsapp" href="https://wa.me/2347068470309">WhatsApp</a>
 
 <script>
-  const faders=document.querySelectorAll('.fade');
-  window.addEventListener('scroll',()=>{
-    faders.forEach(el=>{
-      if(el.getBoundingClientRect().top<window.innerHeight-100){
-        el.classList.add('show');
-      }
+  const cards=document.querySelectorAll('.card');
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){e.target.classList.add('show');}
     });
-  });
+  },{threshold:0.2});
+
+  cards.forEach(c=>observer.observe(c));
 </script></body>
 </html>
