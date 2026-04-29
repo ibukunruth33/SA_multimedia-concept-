@@ -1,36 +1,241 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
-  <title>SA Multimedia Concept</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SA Multimedia Concept | Digital & Tech Services</title>  <!-- SEO -->  <meta name="description" content="SA Multimedia Concept provides internet services, CAC registration, NIN modification, and computer repairs in Nigeria." />
+  <meta name="keywords" content="CAC registration, NIN modification, internet services, computer repair, SA Multimedia Concept" />  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
 
-<body style="font-family: Arial; padding: 20px;">
+    body{
+      background:#0b1220;
+      color:#fff;
+      overflow-x:hidden;
+    }
 
-<h1>SA Multimedia Concept</h1>
-<p>Internet & Computer Services</p>
+    /* NAV */
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 40px;
+      background:rgba(15,23,42,0.7);
+      backdrop-filter:blur(10px);
+      z-index:1000;
+    }
 
-<h2>Services</h2>
-<ul>
-<li>Internet Services – ₦3000</li>
-<li>Photocopy & Typesetting – ₦100 per page</li>
-<li>Lamination & Scanning – ₦500</li>
-<li>WAEC/NECO/NABTEB – ₦5000</li>
-<li>Printing – ₦200 / ₦300</li>
-<li>Graphic Design – From ₦5000</li>
-<li>Computer Repairs – From ₦10000</li>
-<li>CAC Registration – ₦35,000 / ₦70,000</li>
-<li>NIN Services – ₦4000</li>
-<li>BVN Printout – ₦1000</li>
-</ul>
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+      color:#0ea5e9;
+    }
 
-<h2>Contact</h2>
-<p>Phone: 07068470309</p>
-<p>Email: seunayosamultimediaconcept@gmail.com</p>
+    .logo-box{
+      width:35px;
+      height:35px;
+      background:linear-gradient(45deg,#0ea5e9,#1e40af);
+      border-radius:10px;
+    }
 
-<a href="https://wa.me/2347068470309">
-<button>Chat on WhatsApp</button>
-</a>
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:14px;
+    }
 
-</body>
+    /* HERO */
+    header{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:radial-gradient(circle at top,#1e293b,#0b1220);
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      opacity:0.8;
+      max-width:600px;
+    }
+
+    .btn{
+      margin-top:20px;
+      padding:12px 25px;
+      border:none;
+      border-radius:30px;
+      background:#0ea5e9;
+      color:#fff;
+      cursor:pointer;
+      transition:0.3s;
+      text-decoration:none;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      background:#0284c7;
+    }
+
+    section{
+      padding:80px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:40px;
+      color:#0ea5e9;
+    }
+
+    /* SERVICES */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:rgba(30,41,59,0.8);
+      padding:20px;
+      border-radius:15px;
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#0ea5e9;
+    }
+
+    /* BOOKING */
+    .booking{
+      background:rgba(30,41,59,0.5);
+      border-radius:15px;
+      padding:30px;
+      max-width:600px;
+      margin:auto;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .booking input,
+    .booking textarea{
+      width:100%;
+      padding:12px;
+      margin-top:10px;
+      border:none;
+      border-radius:8px;
+      outline:none;
+    }
+
+    .booking button{
+      margin-top:15px;
+      width:100%;
+      padding:12px;
+      border:none;
+      background:#0ea5e9;
+      color:#fff;
+      border-radius:8px;
+      cursor:pointer;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align:center;
+      padding:20px;
+      border-top:1px solid #1e293b;
+      margin-top:40px;
+    }
+
+    /* WHATSAPP */
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      padding:15px;
+      border-radius:50px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:600;
+    }
+
+    /* ANIMATION */
+    .fade{
+      opacity:0;
+      transform:translateY(30px);
+      transition:0.6s;
+    }
+
+    .fade.show{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+  </style></head>
+<body><!-- NAV --><nav>
+  <div class="logo">
+    <div class="logo-box"></div>
+    SA Multimedia Concept
+  </div>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav><!-- HERO --><header>
+  <h1>Digital Solutions That Work</h1>
+  <p>Internet Services • CAC Registration • NIN Modification • Computer Repairs</p>
+  <a href="#booking" class="btn">Book a Service</a>
+</header><!-- SERVICES --><section id="services" class="fade">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">🌐 Internet Services</div>
+    <div class="card">📄 CAC Registration Consultant</div>
+    <div class="card">🆔 NIN Modification</div>
+    <div class="card">💻 Computer Repairs</div>
+  </div>
+</section><!-- BOOKING --><section id="booking" class="fade">
+  <h2>Book a Service</h2>
+  <div class="booking">
+    <form action="https://wa.me/2347068470309" target="_blank">
+      <input type="text" placeholder="Your Name" required />
+      <input type="text" placeholder="Service Needed" required />
+      <textarea rows="4" placeholder="Describe your request"></textarea>
+      <button type="submit">Send Booking via WhatsApp</button>
+    </form>
+  </div>
+</section><!-- CONTACT --><section id="contact" class="fade">
+  <h2>Contact</h2>
+  <p style="text-align:center;">Call/WhatsApp: 07068470309</p>
+</section><footer>
+  <p>&copy; 2026 SA Multimedia Concept. All rights reserved.</p>
+</footer><a class="whatsapp" href="https://wa.me/2347068470309" target="_blank">WhatsApp</a>
+
+<script>
+  const faders=document.querySelectorAll('.fade');
+  window.addEventListener('scroll',()=>{
+    faders.forEach(el=>{
+      if(el.getBoundingClientRect().top<window.innerHeight-100){
+        el.classList.add('show');
+      }
+    });
+  });
+</script></body>
 </html>
