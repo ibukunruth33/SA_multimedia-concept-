@@ -1,195 +1,97 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seunayo_SA_Multimedia | Elite SaaS Agency</title>  <!-- SEO -->  <meta name="description" content="Seunayo_SA_Multimedia Concept is an elite SaaS-style digital agency in Nigeria offering CAC registration, NIN services, printing, cyber services and IT support." />
-  <meta name="keywords" content="CAC registration Nigeria, NIN BVN services, printing, cyber cafe, computer repair, SaaS agency Nigeria" />
-  <meta name="author" content="Seunayo_SA_Multimedia Concept" />  <!-- Structured Data for Google SEO -->  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Seunayo_SA_Multimedia Concept",
-    "telephone": "07068470309",
-    "description": "Digital agency offering CAC, NIN, BVN, printing and cyber services",
-    "areaServed": "Nigeria"
-  }
-  </script>  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SA Multimedia Concept</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-    body{background:#050814;color:#fff;overflow-x:hidden;}
+<body class="bg-gray-100 font-sans">
 
-    nav{
-      position:fixed;top:0;width:100%;
-      display:flex;justify-content:space-between;
-      padding:14px 30px;
-      background:rgba(10,15,30,0.7);
-      backdrop-filter:blur(12px);
-      z-index:1000;
-    }
+<!-- HEADER -->
+<div class="bg-blue-700 text-white text-center p-6">
+  <h1 class="text-3xl font-bold">SA Multimedia Concept</h1>
+  <p>Your trusted digital service hub</p>
+</div>
 
-    .logo{display:flex;align-items:center;gap:10px;color:#38bdf8;font-weight:700;}
-    .logo-box{width:36px;height:36px;background:linear-gradient(45deg,#38bdf8,#2563eb);border-radius:8px;}
+<!-- ABOUT -->
+<section class="p-5">
+  <h2 class="text-xl font-bold mb-2">About Us</h2>
+  <p>
+    We provide internet services, printing, CAC registration, NIN services, and computer solutions in Ilawe Ekiti.
+  </p>
+</section>
 
-    nav a{color:#fff;text-decoration:none;margin-left:15px;font-size:13px;opacity:0.8;}
-    nav a:hover{color:#38bdf8;opacity:1;}
+<!-- SERVICES -->
+<section class="p-5">
+  <h2 class="text-xl font-bold mb-3">Our Services</h2>
+  <div class="grid grid-cols-1 gap-3">
 
-    header{
-      height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      padding:20px;
-    }
+    <div class="bg-white p-3 rounded shadow">Internet Services – ₦3000</div>
+    <div class="bg-white p-3 rounded shadow">Photocopy & Typesetting – ₦100/page</div>
+    <div class="bg-white p-3 rounded shadow">Lamination & Scanning – ₦500</div>
+    <div class="bg-white p-3 rounded shadow">WAEC/NECO/NABTEB – ₦5000</div>
+    <div class="bg-white p-3 rounded shadow">Printing – ₦200 / ₦300</div>
+    <div class="bg-white p-3 rounded shadow">Graphic Design – From ₦5000</div>
+    <div class="bg-white p-3 rounded shadow">Computer Repairs – From ₦10000</div>
+    <div class="bg-white p-3 rounded shadow">CAC Registration – ₦35,000 / ₦70,000</div>
+    <div class="bg-white p-3 rounded shadow">NIN Services – ₦4000</div>
+    <div class="bg-white p-3 rounded shadow">BVN Printout – ₦1000</div>
 
-    header h1{
-      font-size:3.5rem;
-      background:linear-gradient(45deg,#38bdf8,#2563eb);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
-
-    header p{max-width:700px;opacity:0.85;margin-top:10px;}
-
-    .btn{
-      margin-top:20px;
-      padding:14px 30px;
-      border-radius:30px;
-      background:linear-gradient(45deg,#38bdf8,#2563eb);
-      color:#fff;
-      text-decoration:none;
-      font-weight:600;
-    }
-
-    section{padding:90px 20px;max-width:1200px;margin:auto;}
-
-    h2{text-align:center;color:#38bdf8;margin-bottom:30px;}
-
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
-
-    .card{
-      background:rgba(255,255,255,0.03);
-      padding:18px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,0.05);
-    }
-
-    .booking, .admin-panel{
-      max-width:650px;margin:auto;
-      background:rgba(255,255,255,0.03);
-      padding:25px;
-      border-radius:15px;
-    }
-
-    input,textarea{
-      width:100%;padding:10px;margin-top:10px;
-      border:none;border-radius:8px;
-    }
-
-    button{
-      width:100%;margin-top:15px;
-      padding:12px;
-      border:none;
-      background:linear-gradient(45deg,#38bdf8,#2563eb);
-      color:#fff;
-      border-radius:8px;
-      cursor:pointer;
-    }
-
-    footer{text-align:center;padding:20px;border-top:1px solid rgba(255,255,255,0.05);}
-
-    .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;padding:14px;border-radius:50px;}
-
-    .whatsapp-group{
-      position:fixed;
-      bottom:80px;
-      right:20px;
-      background:#5865F2;
-      padding:14px;
-      border-radius:50px;
-      color:#fff;
-      text-decoration:none;
-      font-size:13px;
-    }
-
-    .admin-panel{display:none;}
-
-  </style></head>
-<body><nav>
-  <div class="logo">
-    <div class="logo-box"></div>
-    Seunayo_SA_Multimedia
   </div>
-  <div>
-    <a href="#services">Services</a>
-    <a href="#booking">Booking</a>
-    <a href="#admin" onclick="openAdmin()">Admin</a>
-  </div>
-</nav><header>
-  <h1>Elite SaaS Digital Agency</h1>
-  <p>CAC, NIN, BVN, Printing, Cyber Services & Enterprise IT Solutions</p>
-  <a href="#booking" class="btn">Book Service</a>
-</header><section id="services">
-  <h2>Services</h2>
-  <div class="grid">
-    <div class="card">CAC / SCUML / TIN</div>
-    <div class="card">NIN & BVN Services</div>
-    <div class="card">Printing & Cyber Services</div>
-    <div class="card">Computer Repairs</div>
-  </div>
-</section><section id="booking">
-  <h2>Booking System</h2>
-  <div class="booking">
-    <form onsubmit="saveBooking(event)">
-      <input id="name" placeholder="Full Name" required>
-      <input id="service" placeholder="Service Needed" required>
-      <textarea id="msg" placeholder="Details"></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</section><!-- ADMIN DASHBOARD --><section id="admin" class="admin-panel">
-  <h2>Admin Dashboard (CRM)</h2>
-  <div id="bookings"></div>
-</section><footer>
-  <p>&copy; 2026 Seunayo_SA_Multimedia Concept</p>
-</footer><!-- WhatsApp --><a class="whatsapp" href="https://wa.me/2347068470309">WhatsApp</a>
+</section>
 
-<!-- WhatsApp Group --><a class="whatsapp-group" href="https://chat.whatsapp.com/ChgYPP0aP5sIg1iFmtFCIy?mode=gi_t" target="_blank">Join Group</a>
+<!-- BOOKING -->
+<section class="p-5">
+  <h2 class="text-xl font-bold mb-2">Book a Service</h2>
+
+  <select id="service" class="w-full p-2 border rounded">
+    <option>Select a service</option>
+    <option>Internet Services</option>
+    <option>Photocopy & Typesetting</option>
+    <option>Lamination & Scanning</option>
+    <option>WAEC/NECO/NABTEB</option>
+    <option>Printing</option>
+    <option>Graphic Design</option>
+    <option>Computer Repairs</option>
+    <option>CAC Registration</option>
+    <option>NIN Services</option>
+    <option>BVN Printout</option>
+  </select>
+
+  <button onclick="bookService()" class="mt-3 bg-green-600 text-white px-4 py-2 rounded w-full">
+    Book via WhatsApp
+  </button>
+</section>
+
+<!-- PAYMENT -->
+<section class="p-5">
+  <h2 class="text-xl font-bold mb-2">Make Payment</h2>
+
+  <button onclick="payNow()" class="bg-blue-700 text-white px-4 py-2 rounded w-full">
+    Pay Now
+  </button>
+</section>
+
+<!-- CONTACT -->
+<section class="p-5">
+  <h2 class="text-xl font-bold mb-2">Contact</h2>
+  <p>📞 07068470309</p>
+  <p>📧 seunayosamultimediaconcept@gmail.com</p>
+  <p>📍 Ilawe Ekiti</p>
+</section>
 
 <script>
-let bookings = JSON.parse(localStorage.getItem('bookings') || '[]');
-
-function saveBooking(e){
-  e.preventDefault();
-
-  let data = {
-    name: document.getElementById('name').value,
-    service: document.getElementById('service').value,
-    msg: document.getElementById('msg').value
-  };
-
-  bookings.push(data);
-  localStorage.setItem('bookings', JSON.stringify(bookings));
-
-  window.open(`https://wa.me/2347068470309?text=Name:${data.name}%0AService:${data.service}%0ADetails:${data.msg}`);
-
-  alert('Booking saved successfully');
+function bookService() {
+  var service = document.getElementById("service").value;
+  window.open("https://wa.me/2347068470309?text=Hello, I want to book: " + service);
 }
 
-function openAdmin(){
-  let pass = prompt('Enter Admin Password');
-  if(pass !== 'admin123') return alert('Access Denied');
-
-  document.querySelector('.admin-panel').style.display='block';
-  loadBookings();
+function payNow() {
+  alert("Payment integration coming next (Paystack)");
 }
+</script>
 
-function loadBookings(){
-  let box = document.getElementById('bookings');
-  box.innerHTML = bookings.map(b=>
-    `<div class='card'><b>${b.name}</b><br>${b.service}<br>${b.msg}</div>`
-  ).join('');
-}
-</script></body>
+</body>
 </html>
